@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif:wght@400;600;700&display=swap');
+
+
+
+:root {
+/* Color Palette */
+    --rose-800: oklch(41.17% 0.121 355.07);
+    --rose-50: oklch(98.34% 0.010 345.41);
+    --stone-900: oklch(0.3036 0.0056 56.18);
+    --stone-600: oklch(0.459 0.0185 67.34);
+    --stone-150: oklch(0.9006 0.0105 67.69);
+    --stone-100: oklch(0.9293 0.0242 67.52);
+    --brown-800: oklch(0.4672 0.0919 38.33);
+    --white: oklch(1 0 0);
+
+/* Typography */
+    --font-family-young: 'Young Serif', serif;
+    --font-family-outfit: 'Outfit', sans-serif;
+    --font-size-16: 1rem;
+    --font-size-20: 1.25rem;
+    --font-size-28: 1.75rem;
+    --font-size-40: 2.5rem;
+    --font-height-base: 1;
+    --font-height-larger: 1.5;
+    --font-weight-regular: 400;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+
+/* Spacing */
+    --spacing-8: 0.5rem;
+    --spacing-12: 0.75rem;
+    --spacing-16: 1rem;
+    --spacing-24: 1.5rem;
+    --spacing-32: 2rem;
+    --spacing-40: 2.5rem;
+    --spacing-48: 3rem;
+    --spacing-128: 8rem;
+
+/* Radius */
+    --radius-sm: 0.75rem;
+    --radius-md: 1.5rem;
+    --radius-lg: 2rem;
+
+}
+body {
+    background-color: var(--stone-100);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.recipe {
+background-color: var(--white);
+border-radius: var(--radius-md);
+
+
+}
+
+.recipe__image img {
+    border-radius: var(--radius-sm);
+}
+
+.recipe__intro {
+    gap: var(--spacing-24);
+}
+
+.recipe__title {
+    font-family: var(--font-family-young);
+    font-size: var(--font-size-40);
+}
+
+.recipe__lead {
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-16);
+    line-height: var(--font-height-larger);
+}
+
+.recipe__section {
+    
+}
+
+.recipe__section--prep {
+    color: var(--rose-800);
+    background-color: var(--rose-50);      
+    font-family: var(--font-family-outfit); 
+    font-size: var(--font-size-20);
+}
+
+
+.recipe__section--ingredients {
+}
+
+.recipe__section--instructions {
+}
+
+.recipe__section--nutrition {
+}
+
+.recipe__section-title {
+    color: var(--brown-800);
+}
+/* door deze twee achter elkaar te zetten, wordt de kleur van de sectietitel in de voorbereidingssectie aangepast */
+.recipe__section--prep .recipe__section-title {
+    color: var(--rose-800);
+}
+
+.recipe__list {
+}
+
+.recipe__list--ordered {
+}
+
+.recipe__table {
+}
+
+.attribution {
+}
