@@ -64,6 +64,7 @@ hr {
 background-color: var(--white);
 align-items: stretch;
 gap: var(--spacing-32);
+padding-bottom: var(--spacing-40);
 
 }
 
@@ -152,14 +153,29 @@ gap: var(--spacing-32);
     }
 }
 
-.recipe__list--ordered {
-
-}
-
 .recipe__table {
     font-family: var(--font-family-outfit);
     font-size: var(--font-size-16);
+    line-height: var(--font-height-larger);
+    border-collapse: collapse;
+    width: 100%;
+
+        strong {
+            color: var(--brown-800);
+        }
+        & td {
+            border-bottom: 1px solid var(--stone-150);
+        }
+        & tr:last-child td {
+            border-bottom: none;
+        }
 }
 
 .attribution {
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-16);
+    line-height: var(--font-height-larger);
+    color: var(--stone-600);
+    text-align: center;
+    margin: var(--spacing-32) 0;
 }
