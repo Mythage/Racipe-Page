@@ -71,8 +71,6 @@ hr {
 
 .recipe {
 background-color: var(--white);
-align-items: stretch;
-gap: var(--spacing-32);
 padding-bottom: var(--spacing-40);
 
 }
