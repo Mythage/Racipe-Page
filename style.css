@@ -142,15 +142,23 @@ padding-bottom: var(--spacing-40);
     line-height: var(--font-height-larger);
     color: var(--stone-600); 
     padding-left:var(--spacing-24);
+}
 
-    li {
-        margin-bottom: var(--spacing-8);
-        padding-left: var(--spacing-8);
-        
-        &::marker {
-        color: var(--brown-800);
-        }
-    }
+.recipe__list li {
+    margin-bottom: var(--spacing-8);
+    padding-left: var(--spacing-8);
+}
+
+.recipe__list li::marker {
+    color: var(--brown-800);
+}
+
+.recipe__list--ordered li {
+    font-weight: var(--font-weight-regular);
+}
+
+.recipe__list--ordered li::marker {
+    font-weight: var(--font-weight-bold);
 }
 
 .recipe__table {
