@@ -47,16 +47,24 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .recipe {
 background-color: var(--white);
 border-radius: var(--radius-md);
-
+padding: var(--spacing-40);
 
 }
 
+.recipe__image {
+    margin: 0;
+}
 .recipe__image img {
+    width: 100%;
+    height: auto;
     border-radius: var(--radius-sm);
 }
 
@@ -76,7 +84,9 @@ border-radius: var(--radius-md);
 }
 
 .recipe__section {
-    
+    font-family: var(--font-family-outfit);
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--stone-600);    
 }
 
 .recipe__section--prep {
@@ -98,19 +108,30 @@ border-radius: var(--radius-md);
 
 .recipe__section-title {
     color: var(--brown-800);
+    font-family: var(--font-family-young);
+    font-size: var(--font-size-28);
 }
-/* door deze twee achter elkaar te zetten, wordt de kleur van de sectietitel in de voorbereidingssectie aangepast */
+/* by placing these two together, the color of the section title in the preparation section is adjusted */
 .recipe__section--prep .recipe__section-title {
     color: var(--rose-800);
 }
 
 .recipe__list {
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-16);
+    color: var(--stone-600);
+}
+.recipe__list li::marker {
+    color: var(--brown-800);
 }
 
 .recipe__list--ordered {
+
 }
 
 .recipe__table {
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-16);
 }
 
 .attribution {
