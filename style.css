@@ -19,12 +19,14 @@
     --font-size-16: 1rem;
     --font-size-20: 1.25rem;
     --font-size-28: 1.75rem;
+    --font-size-36: 2.25rem;
     --font-size-40: 2.5rem;
     --font-height-base: 1;
     --font-height-larger: 1.5;
     --font-weight-regular: 400;
     --font-weight-semi-bold: 600;
     --font-weight-bold: 700;
+    --font-spacing-0: 0;
 
 /* Spacing */
     --spacing-8: 0.5rem;
@@ -49,23 +51,30 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     
+}
+hr {
+    border: none;
+    border-top: 1px solid var(--stone-150);
+    margin: var(--spacing-32) 0;
 }
 
 .recipe {
 background-color: var(--white);
-border-radius: var(--radius-md);
-padding: var(--spacing-40);
+align-items: stretch;
+gap: var(--spacing-32);
 
 }
 
 .recipe__image {
     margin: 0;
-}
-.recipe__image img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--radius-sm);
+    padding: 0;
+    
+        img {
+        width: 100%;
+        height: auto;
+        }
 }
 
 .recipe__intro {
@@ -74,26 +83,35 @@ padding: var(--spacing-40);
 
 .recipe__title {
     font-family: var(--font-family-young);
-    font-size: var(--font-size-40);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-36);
+    letter-spacing: var(--font-spacing-0);
+    color: var(--stone-900);
 }
 
 .recipe__lead {
     font-family: var(--font-family-outfit);
     font-size: var(--font-size-16);
     line-height: var(--font-height-larger);
+
 }
 
 .recipe__section {
     font-family: var(--font-family-outfit);
-    font-weight: var(--font-weight-semi-bold);
+    font-weight: var(--font-weight-regular);
+
     color: var(--stone-600);    
+    margin: var(--spacing-32);
 }
 
 .recipe__section--prep {
     color: var(--rose-800);
     background-color: var(--rose-50);      
+    border-radius: var(--radius-sm);
     font-family: var(--font-family-outfit); 
     font-size: var(--font-size-20);
+    padding: var(--spacing-24);
+    gap: var(--spacing-16);
 }
 
 
@@ -119,10 +137,17 @@ padding: var(--spacing-40);
 .recipe__list {
     font-family: var(--font-family-outfit);
     font-size: var(--font-size-16);
-    color: var(--stone-600);
-}
-.recipe__list li::marker {
-    color: var(--brown-800);
+    color: var(--stone-600); 
+    padding: 0 var(--spacing-24);
+
+    li {
+        margin-bottom: var(--spacing-8);
+        padding-left: var(--spacing-8);
+        
+        &::marker {
+        color: var(--brown-800);
+        }
+    }
 }
 
 .recipe__list--ordered {
