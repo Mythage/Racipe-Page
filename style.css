@@ -70,7 +70,7 @@ gap: var(--spacing-32);
 .recipe__image {
     margin: 0;
     padding: 0;
-    
+
         img {
         width: 100%;
         height: auto;
@@ -128,6 +128,7 @@ gap: var(--spacing-32);
     color: var(--brown-800);
     font-family: var(--font-family-young);
     font-size: var(--font-size-28);
+    font-weight: var(--font-weight-regular);
 }
 /* by placing these two together, the color of the section title in the preparation section is adjusted */
 .recipe__section--prep .recipe__section-title {
@@ -137,8 +138,9 @@ gap: var(--spacing-32);
 .recipe__list {
     font-family: var(--font-family-outfit);
     font-size: var(--font-size-16);
+    line-height: var(--font-height-larger);
     color: var(--stone-600); 
-    padding: 0 var(--spacing-24);
+    padding-left:var(--spacing-24);
 
     li {
         margin-bottom: var(--spacing-8);
