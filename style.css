@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif:wght@400;600;700&display=swap');
 
+html {
+  box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 :root {
 /* Color Palette */
@@ -45,6 +53,7 @@
 
 }
 body {
+    box-sizing: border-box;
     background-color: var(--stone-100);
     margin: 0;
     padding: 0;
@@ -186,4 +195,35 @@ padding-bottom: var(--spacing-40);
     color: var(--stone-600);
     text-align: center;
     margin: var(--spacing-32) 0;
+}
+
+@media (min-width: 48rem) {
+    body {
+        padding: var(--spacing-128) 0;
+    }
+    .recipe {
+        flex-direction: row;
+        max-width: 38.5rem;
+        margin: 0 auto;
+        padding: var(--spacing-40);
+        gap: var(--spacing-40);
+        border-radius: var(--radius-md);
+    }
+    .recipe__intro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .recipe__image img {
+        border-radius: var(--radius-sm);
+    }
+    .recipe__section {
+        margin: 0;
+        gap: var(--spacing-24);
+    }
+}
+
+@media (min-width: 64rem) {
+    .recipe {
+        max-width: 46rem;
+    }
 }
