@@ -124,16 +124,6 @@ padding-bottom: var(--spacing-40);
     gap: var(--spacing-16);
 }
 
-
-.recipe__section--ingredients {
-}
-
-.recipe__section--instructions {
-}
-
-.recipe__section--nutrition {
-}
-
 .recipe__section-title {
     color: var(--brown-800);
     font-family: var(--font-family-young);
